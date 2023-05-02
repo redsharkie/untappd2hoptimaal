@@ -1,26 +1,26 @@
 {
-    "name": "Untappd menu 2 Hoptimaal",
-    "description": "Find beer in a untappd menu op Hoptimaal",
-    "version": "0.1",
-    "manifest_version": 3,
-    "background": {
-        "service_worker": "background.js"
-      },
-    "permissions": ["storage", "activeTab", "scripting"],
-    "action": {
-        "default_popup": "popup.html"
-      },
-    "options_page": "options.html",
-    "default_icon": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
-    },
+  "name": "Untappd-2-Hoptimaal",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Search your selected text Hoptimaal.nl",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "contextMenus"
+  ],
+  "commands": {
+    "my-command": {
+      "description": "Search your selected text Hoptimaal.nl",
+      "suggested_key": {
+        "default": "Ctrl+Shift+H",
+        "mac": "Command+Shift+H"
+      }
+    }
+  },
     "icons": {
-        "16": "/images/get_started16.png",
-        "32": "/images/get_started32.png",
-        "48": "/images/get_started48.png",
-        "128": "/images/get_started128.png"
-      }   
+    "128": "favicon.ico"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
+}
